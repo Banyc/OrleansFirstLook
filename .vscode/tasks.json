@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build_HelloHost",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/OrleansFirstLook.HelloHost/OrleansFirstLook.HelloHost.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build_HelloClient",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/OrleansFirstLook.HelloClient/OrleansFirstLook.HelloClient.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "HelloHost",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_HelloHost",
+            "program": "${workspaceFolder}/src/OrleansFirstLook.HelloHost/bin/Debug/net6.0/OrleansFirstLook.HelloHost.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/OrleansFirstLook.HelloHost",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": "HelloClient",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_HelloClient",
+            "program": "${workspaceFolder}/src/OrleansFirstLook.HelloClient/bin/Debug/net6.0/OrleansFirstLook.HelloClient.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/OrleansFirstLook.HelloClient",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Compound",
+            "configurations": [
+                "HelloHost",
+                "HelloClient"
+            ]
+        }
+    ]
+}
